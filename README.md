@@ -5,14 +5,14 @@
 ## About me
 - Studying: Bachelor in Science Computer ( Honers ), UiTM
 - Currently learning: SCS649
-- My FYP area: 
+- My FYP area: Cloud Computing
 
 ## Skills and tools
-[List what you know. Example: Python, Git, SQL]
+Python, Git, SQL, C++ , Machine Learning , HTML , Java
 
 ## Projects
-- [Project name](link-to-your-repository): one sentence about it
+- Simulation-Based Evaluation of Adaptive Resource Allocation for Campus Computing Workloads
 
 ## Contact
-- LinkedIn: [your profile link]
-- Email: [a professional email address]
+- LinkedIn: https://www.linkedin.com/in/muhammad-ammar-mukhriz-189809339?utm_source=share_via&utm_content=profile&utm_medium=member_android
+- Email: mukhriz98255@gmail.com
