@@ -1,36 +1,29 @@
-# User Stories
+### User Story 1 — Configure a workload
 
-Format: As a [type of user], I want [goal], so that [reason or benefit].
+**As a** researcher, **I want** to configure the number of jobs and their arrival patterns, **so that** I can test the policies under different workload conditions.
 
-## User Story 1: Submit Computing Workloads
+**Linked requirement:** FR1
 
-As a student, I want to submit computing workloads for simulation, so that I can evaluate how my jobs may be handled.
+**Acceptance criteria:**
+1. The system allows the user to select a workload configuration.
+2. The system generates jobs according to the selected configuration.
 
-**Related Requirements:** FR1, FR2
+### User Story 2 — Run allocation policies
 
-**Acceptance Criteria**
-- Given I have a computing workload, when I submit it, then the system accepts it for simulation.
-- Given a workload has been submitted, when the simulation runs, then resource allocation is simulated.
+**As a** computing system developer, **I want** to run fixed-capacity, threshold-based, and adaptive policies, **so that** I can compare their behaviour.
 
-## User Story 2: Compare Resource Allocation Policies
+**Linked requirements:** FR2, FR3, FR4
 
-As a researcher, I want to compare fixed-capacity, threshold-based, and adaptive resource allocation policies, so that I can evaluate their performance under different workload conditions.
+**Acceptance criteria:**
+1. The system can run each of the three policies.
+2. Each policy uses the same workload and job scheduling rule during a comparison.
 
-**Related Requirements:** FR3, FR4, FR5, FR6, NFR3
+### User Story 3 — Compare results
 
-**Acceptance Criteria**
-- The system simulates fixed-capacity, threshold-based, and adaptive resource allocation policies.
-- The system records average waiting time, average completion time, maximum queue length, and active server usage for each policy.
-- The system allows results from all three policies to be compared under the same workload conditions.
-- Repeating a simulation with the same workload, policy settings, and random seed produces the same results.
+**As a** campus IT administrator, **I want** to view performance and resource usage measurements, **so that** I can identify which policy is more suitable for a given workload.
 
-## User Story 3: Review Simulation Results
+**Linked requirements:** FR5, FR6
 
-As a campus IT administrator, I want simulation results presented clearly, so that I can evaluate resource usage and system performance.
-
-**Related Requirements:** NFR1, NFR2, NFR4
-
-**Acceptance Criteria**
-- The system completes a simulation of 1,000 jobs within 10 seconds under the documented test configuration.
-- A user can configure a workload and start a simulation using no more than five main interaction steps.
-- The implementation separates workload generation, resource allocation policies, and performance measurement into distinct modules.
+**Acceptance criteria:**
+1. The system displays all four required performance measurements for each policy.
+2. The system presents the results in a comparison table or chart.
