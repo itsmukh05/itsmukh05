@@ -1,13 +1,15 @@
 # Requirements
 
 ## Functional requirements (what the system must DO)
-1. The system shall ...
-2. The system shall ...
-3. The system shall ...
-4. The system shall ...
-5. The system shall ...
+
+- **REQ-F01:** The system shall allow users to submit campus computing workloads for simulation.
+- **REQ-F02:** The system shall simulate resource allocation for submitted workloads.
+- **REQ-F03:** The system shall support adaptive resource allocation based on workload demands.
+- **REQ-F04:** The system shall record resource allocation results for evaluation.
+- **REQ-F05:** The system shall allow users to compare results from different resource allocation strategies.
 
 ## Non-functional requirements (how the system must PERFORM)
-1. The system shall ... (include a number, for example "within 2 seconds")
-2. The system shall ...
-3. The system shall ...
+
+- **REQ-N01:** The system shall display simulation results within 2 seconds after a completed simulation, under the defined test conditions.
+- **REQ-N02:** The system shall produce consistent results when the same inputs and simulation settings are used.
+- **REQ-N03:** The system shall organize simulation results in a clear format that users can understand and evaluate.
