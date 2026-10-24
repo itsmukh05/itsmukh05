@@ -20,6 +20,6 @@
 
 - Without a simulation environment IT managers cannot safely test allocation policies that balance job completion times, queue lengths and server efficiency before deploying them in real systems.
 
-## Problem statement (3 to 5 sentences)
+## Problem statement
 
-Campus computing systems struggle with job surges around assignment deadlines, resulting in long waiting times under fixed server limits and idle resources during quieter periods. Dynamic scaling rules could help, but IT managers have no safe way to compare fixed-capacity, threshold-based, and adaptive strategies under realistic student workloads. Testing these rules directly on live servers risks disrupting services and university operations. To address this, a standalone simulator is needed so IT managers can safely evaluate trade-offs in job completion time, queue length, and server utilisation. This tool would support informed, risk-free decisions in campus capacity planning.
+Campus computing systems struggle with job surges around assignment deadlines, resulting in long waiting times under fixed server limits and idle resources during quieter periods (Jeong jeong,2025). Dynamic scaling rules could help but IT managers have no safe way to compare the resource allocation strategies under realistic student workloads.Qu et al. (2018) emphasize that allocation outcomes vary based on specific workload rules and conditions. Testing these rules directly on live servers risks disrupting services and university operations. To address this, a standalone simulator is needed so IT managers can safely evaluate trade-offs in job completion time, queue length and server utilisation which would support risk-free decisions in campus capacity planning.
