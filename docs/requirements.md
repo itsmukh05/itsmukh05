@@ -1,25 +1,32 @@
 # Requirements
 
-## Functional requirements (what the system must DO)
+## Functional requirements
 
-**FR1:** The system shall generate computing jobs with configurable arrival times and processing durations.
 
-**FR2:** The system shall simulate a fixed-capacity resource allocation policy.
+**FR1 — Configure simulation parameters:** The simulator must let users set parameters before starting a simulation, including the number of jobs, the number of computing resources, and the simulation duration. Users can adjust these settings to match their needs, and the simulator uses the selected parameters during the run.
 
-**FR3:** The system shall simulate a threshold-based resource allocation policy using predefined thresholds.
+**FR2 — Simulate job arrivals, queues, execution, and completion:** The simulator must show how jobs move through the system, from arrival to completion, so users can understand each stage of the job lifecycle.
 
-**FR4:** The system shall simulate an adaptive resource allocation policy using queue length and recent job arrival rates.
+**FR3 — Allocate jobs to computing resources:** The simulator must assign jobs to available computing resources according to the implemented resource-allocation mechanism and process each job to produce a result.
 
-**FR5:** The system shall calculate average waiting time, average completion time, maximum queue length, and active server usage for each policy.
+**FR4 — Record simulation results:** The simulator must record job completion times, queue lengths, and resource utilisation so users can analyse performance and review the results.
 
-**FR6:** The system shall display a comparison of the results for all three policies under the same workload conditions.
+**FR5 — Support workload conditions:** The simulator must let users test low, normal, and high-demand workloads to observe how the system behaves under different conditions.
 
-## Non-functional requirements (how the system must PERFORM)
+**FR6 — Support predefined test cases:** The simulator must let users run predefined test cases and compare actual results with expected outcomes to verify correctness.
 
-**NFR1 — Performance:** The system shall complete a simulation of 1,000 jobs within 10 seconds on the development computer under the documented test configuration.
+## Non-functional requirements
 
-**NFR2 — Usability:** A user shall be able to configure a workload and start a simulation using no more than five main interaction steps.
 
-**NFR3 — Reliability:** The system shall produce the same results when the same workload, policy settings, and random seed are used.
+**NFR1 — Correctness:** The simulator must produce results that match the expected outcomes of test cases.
 
-**NFR4 — Maintainability:** The implementation shall separate workload generation, resource allocation policies, and performance measurement into distinct modules.
+**NFR2 — Computational performance:** The simulator must measure execution time across different workload sizes so users can understand how runtime changes as the number of jobs increases.
+
+**NFR3 — Reliability:** The simulator must process valid inputs without unexpected errors or crashes.
+
+**NFR4 — Usability:** The simulator must make it easy for users to set parameters and understand the results, with clear instructions.
+
+
+**NFR5 — Reproducibility:** The simulator must allow users to repeat experiments using the same configuration and workload data so results can be checked consistently. The simulator must retain settings for reuse.
+
+**NFR6 — Maintainability:** The simulator must organise code into separate components so individual parts can be tested, fixed, or updated without requiring major changes to the whole system.
