@@ -4,32 +4,30 @@
 
 - **Resource managers:** Resource managers are users who may investigate how computing resources are used under varying demand. The simulator shows how resource-allocation shifts with demand.
 
-- **System developer:** System developer is responsible for designing, developing, testing and evaluating the simulator. The developer creates a simulator for resource-allocation studies.
-
-- **Supervisor and academic evaluator:** Supervisor and academic evaluator review the projects methods, implementation and evaluation results. They ensure the simulator meets standards.
+- **Student:** Represent the users who submit computing job to the campus computing service
 
 ### In Scope
 
-- Analysing existing resource-allocation approaches is part of the scope. We study how current methods handle computing resource allocation.
+- Analysing existing resource-allocation approaches to understand how different methods manage computing resources.
 
-- Identifying the requirements for a resource-allocation simulator is in scope. We list what the simulator must do for resource-allocation tasks.
+- Identifying the requirements for a resource-allocation simulator and determining the functions needed to model resource allocation.
 
-- Simulating jobs, queues, processing and computing resource allocation is included. The simulator models how jobs move through queues and how resources are assigned.
+- The simulator will model job arrivals, waiting queues, processing, and the allocation of computing resources.
 
-- Testing synthetic workloads under normal and high demand is part of the work. The simulator runs scenarios for each demand level.
+- Synthetic workloads representing normal and high-demand conditions will be used to examine how the simulator handles different workload levels.
 
-- Checking correctness using predefined test cases is required. We verify the simulator works with known results.
+- Predefined test cases will be used to verify the correctness of the simulator by comparing its results with expected outcomes.
 
-- Measuring execution time and if the evaluation plan includes it memory usage across different workload sizes is planned. These metrics show how the simulator scales.
+- The computational performance of the simulator will be evaluated by measuring execution time.
 
 ### Out of Scope
 
-- Integrating the simulator with campus servers is out of scope. We do not connect the simulator to servers.
+- Integrating the simulator with actual campus servers.
 
-- Collecting real-time workload data from university systems is out of scope. We use data instead.
+- Collecting real-time workload data from campus systems .
 
-- Deploying a production resource-management system is out of scope. The simulator remains a research tool.
+- Deploying a production resource-management system.
 
-- Building an enterprise cloud platform is out of scope. The simulator focuses on resource-allocation scenarios.
+- Building an enterprise cloud platform.
 
-- Evaluating power consumption or thermal behaviour is, out of scope unless added to the approved scope. We ignore energy metrics for now.
+- Evaluating power consumption or thermal behaviour.
