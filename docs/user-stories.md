@@ -1,29 +1,11 @@
-### User Story 1 — Configure a workload
+### User Story 1. Configure a workload
 
-**As a** researcher, **I want** to configure the number of jobs and their arrival patterns, **so that** I can test the policies under different workload conditions.
+User Story 1: As a campus IT administrator I am setting up simulation settings, such, as the number of jobs and the available computing resources so that I can test campus computing workload scenarios.
 
-**Linked requirement:** FR1
+### User Story 2. Run allocation policies
 
-**Acceptance criteria:**
-1. The system allows the user to select a workload configuration.
-2. The system generates jobs according to the selected configuration.
+User Story 2: As a campus IT administrator I am simulating job arrivals. How resources are allocated under different workload conditions so that I can see how jobs are processed and how computing resources are assigned.
 
-### User Story 2 — Run allocation policies
+### User Story 3. Compare results
 
-**As a** computing system developer, **I want** to run fixed-capacity, threshold-based, and adaptive policies, **so that** I can compare their behaviour.
-
-**Linked requirements:** FR2, FR3, FR4
-
-**Acceptance criteria:**
-1. The system can run each of the three policies.
-2. Each policy uses the same workload and job scheduling rule during a comparison.
-
-### User Story 3 — Compare results
-
-**As a** campus IT administrator, **I want** to view performance and resource usage measurements, **so that** I can identify which policy is more suitable for a given workload.
-
-**Linked requirements:** FR5, FR6
-
-**Acceptance criteria:**
-1. The system displays all four required performance measurements for each policy.
-2. The system presents the results in a comparison table or chart.
+User Story 3: As a simulator developer I am testing the simulator with predefined test cases. Measuring its execution time so that I can confirm its accuracy and assess its computational performance.
