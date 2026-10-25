@@ -3,9 +3,7 @@
 ### C1:Concepts
 
 1. Discrete-Event Simulation (DES)
-Discrete-Event Simulation (DES) is a simulation method that represents a system by processing events that occur at particular points in time. Instead of continuously updating the system, the simulation changes its state when an event occurs, such as a job arriving, starting execution, or completing execution.
-
-For this project, DES can represent a campus computing service where students submit jobs, such as document-processing tasks or programming jobs. When several students submit jobs around an assignment deadline, the number of waiting jobs may increase. The simulator can model how jobs are placed in a queue and assigned to available computing servers.
+Discrete-Event Simulation (DES) is a simulation method that represents a system by processing events that occur at particular points in time. Instead of continuously updating the system, the simulation changes its state when an event occurs, such as a job arriving, starting execution, or completing execution.For this project, DES can represent a campus computing service where students submit jobs, such as document-processing tasks or programming jobs. When several students submit jobs around an assignment deadline, the number of waiting jobs may increase. The simulator can model how jobs are placed in a queue and assigned to available computing servers.
 
 2. First-Come, First-Served (FCFS)
 Job scheduling determines the order in which waiting jobs are assigned to available computing resources. First-Come, First-Served (FCFS) is a basic scheduling algorithm that processes jobs in their arrival order. It is useful as a starting point because its rules are simple and its results can be checked manually.
@@ -62,23 +60,10 @@ Three relevant technologies or approaches for this project are Discrete-Event Si
 
 Python is a programming language that can be used to implement the simulator's logic, generate synthetic workloads, process simulation results, and conduct performance tests. Its use in this project would depend on the final implementation choice.
 
-## C3 Fit to your problem
-
-Why these approaches fit the project
-DES, FCFS, and CloudSim address different aspects of the project.
-- DES provides a way to model jobs arriving, waiting, executing, and completing over time.
-- FCFS provides a simple scheduling baseline that helps verify the simulator's results.
-- CloudSim provides an existing framework to investigate how computing resources and allocation policies can be represented in a simulation.
-
-Together, these approaches support the development and evaluation of a campus computing workload simulator. DES can represent changes in workload and server status, while FCFS can help establish expected results for correctness testing. CloudSim offers a reference point for deciding whether to build a custom simulator or use an existing framework.
-
-**Benefits**
-
-The main benefits of using DES are:
-- **Controlled testing:** Different workload conditions can be tested without disrupting an actual campus computing service.
-- **Repeatability:** The same job data and configuration can be reused to check whether DES produces results. 
-- **Performance measurement:** Execution time and other selected metrics can be recorded across different workload sizes.
-- **Flexibility:** The model can be extended to include servers, alternative scheduling rules or adaptive resource allocation policies. 
+## C3 Fit of the Chosen Technology
+- Discrete-Event Simulation (DES) is suitable for this project because it can simulate how computing jobs arrive, wait in queues, use available servers and finish processing.
+- DES allows the simulator to test different workloads such as normal and high-demand conditions. The results can be used to evaluate job completion times, queue lengths, resource utilisation and the simulator's performance.
+- DES is that testing can be done without affecting real campus computing systems. DES is that testing can be done without affecting real campus computing systems.
 
 
 **Limitations**
